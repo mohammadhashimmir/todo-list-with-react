@@ -1,0 +1,97 @@
+#root{
+    text-align: center;
+    display: flex;
+   justify-content: center;
+}
+
+body{
+    background-color:#cce3de;
+}
+
+.main{
+    margin-top: 190px;
+    width: 30%;
+    background-color:#a4c3b2;
+    border: 1px solid #6b9080;
+    border-radius: 15px;
+}
+
+h1{
+    font-size: 37px;
+     color: #353535;
+     text-shadow:1px 1px 2px #4a5759;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     margin-top: 10px;   
+}
+
+h2{
+    font-size: 33px;
+    color: #353535;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: -2px;
+}
+
+.enterTodo{
+  width: 250px;
+  padding: 9.5px 14px;
+  border: 1px solid #a4c3b2;
+  transition: all 0.3s;
+  border-radius: 7px;
+  
+}
+.enterTodo:focus { 
+    outline: none !important;
+    border: 2px solid #6b9080 ;
+}
+
+.mainForm{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+button.ui.button{
+    transition: all 0.3s;
+    width: 80px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+button.ui.button:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em azure;
+    transform: translateY(-0.1em);
+    background-color:#cce3de ;
+}
+
+.displayTodo{
+    width: 330px;
+    height: 37px;
+  padding: 8.5px 10px;
+  border: 1px solid #a4c3b2;
+  transition: all 0.3s;
+  border-radius: 7px;
+  margin-top: 5px;
+  background-color:#cce3de;
+  font-weight: bolder;
+}
+
+button.ui.button.trash{
+    width: 34px;
+    margin-left: 6px;
+}
+
+button.ui.button.delAll{
+    width: 34px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+  @media only screen and (max-width:767px){
+    .main{
+        width: 95%;
+    }
+  }
+  @media only screen and (min-width:768px) and (max-width:1249px){
+    .main{
+        width: 60%;
+    }
+  }
